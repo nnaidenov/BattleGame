@@ -9,7 +9,7 @@ var Controller = (function (selector) {
     var MainController = Class.create({
         init: function (selector) {
             var persisterMy = new Persister;
-            this.persister = persisterMy.mainPersister('/api/');
+            this.persister = persisterMy.mainPersister('http://battle-game-spa-js.apphb.com:22954/api/');
             this.selector = selector;
             this.openGamesState;
             this.activeGamesState;
